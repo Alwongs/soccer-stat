@@ -19,7 +19,7 @@ export default {
         },
         UPDATE_MATCHES(state, matches) {
             state.matches = matches;
-        },
+        }
     },
     actions: {
         get_matches_from_api({commit, dispatch, getters}, data) {
@@ -45,6 +45,6 @@ export default {
             .finally(() => {
                 commit('STOP_LOADING');
             })
-        },
-    },
+        }
+    }
 }

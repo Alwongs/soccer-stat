@@ -18,9 +18,5 @@ export default {
         SAVE_TOKEN(state, token) {
             state.token = token
         }
-    },
-    actions: {
-    },
+    }
 }
-
-// 0afd7ebd746c417ea1a230a921ee8918

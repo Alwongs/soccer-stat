@@ -5,7 +5,7 @@ export default {
         },
         isRouteChanged(state) {
             return state.isRouteChanged
-        },
+        }
     },
     state: { 
         isRouteChanged: false, 
@@ -20,8 +20,6 @@ export default {
         },
         UPDATE_IS_ROUTE_CHANGED(state, value) {
             state.isRouteChanged = value;
-        },
-    },
-    actions: {
-    },
+        }
+    }
 }

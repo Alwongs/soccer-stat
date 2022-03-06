@@ -1,7 +1,7 @@
 export default {
     getters: {
         errorMessage(state) {
-            return state.errorMessage
+            return state.errorMessage;
         }
     },
     state: { 

@@ -1,7 +1,7 @@
 export default {
     getters: {
         isMobile(state) {
-            return state.isMobile
+            return state.isMobile;
         }
     },
     state: { 

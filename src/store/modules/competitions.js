@@ -36,7 +36,7 @@ export default {
             })
             .catch(error => {
                 if(error.request) {
-                    commit('RESTRICT_TOKEN')
+                    commit('RESTRICT_TOKEN');
                 }
             })
             .finally(() => {
@@ -44,5 +44,5 @@ export default {
                 commit('STOP_LOADING');
             })
         }
-    },
+    }
 }

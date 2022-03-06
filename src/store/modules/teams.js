@@ -55,11 +55,12 @@ export default {
                 commit('UPDATE_ENTITY_NAME', response.data.name);
             })
             .catch(error => {
-                console.error(error);
-                this.errored = true;
+                if(error.request) {
+                    commit('RESTRICT_TOKEN')
+                }
             })
             .finally(() => {
             });            
         }
-    },
+    }
 }

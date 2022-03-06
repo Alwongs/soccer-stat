@@ -1,14 +1,14 @@
 export default {
     getters: {
         getDateFrom(state) {
-            return state.dateFrom
+            return state.dateFrom;
         },
         getDateTo(state) {
-            return state.dateTo
+            return state.dateTo;
         },
         getText(state) {
-            return state.text
-        },
+            return state.text;
+        }
     },
     state: {
         dateFrom: '',
@@ -21,12 +21,12 @@ export default {
             state.dateTo = dates.dateTo;
         },
         UPDATE_TEXT(state, text) {
-            state.text = text
-        },
+            state.text = text;
+        }
     },
     actions: {
         find_items_by_text({dispatch, commit, getters}, data) {
-            commit('UPDATE_TEXT', data.text)
+            commit('UPDATE_TEXT', data.text);
             if (data.route === '/teams') {
                 dispatch('get_teams_from_api');
                 commit('FIND_TEAMS_BY_TEXT', getters.getText);
@@ -34,6 +34,6 @@ export default {
                 dispatch('get_competitions_from_api');                
                 commit('FIND_COMPETITIONS_BY_TEXT', getters.getText);
             }
-        },
-    },
+        }
+    }
 }
